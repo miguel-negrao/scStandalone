@@ -1,4 +1,11 @@
-copy sclang and scsynth/supernova here.
-copy plugins to './plugins'.
-copy class library 'SCClassLibrary' folder here.
+# SuperCollider linux standalone How-to
 
+## Instructions
+
+0. Compile SuperCollider from master.
+1. clone this repository.
+1. copy sclang and scsynth/supernova to this folder.
+2. copy the plugins to the 'plugins' folder.
+3. copy 'SCClassLibrary' to this folder.
+4. Add any quarks or class files to the 'classes' folder and add their paths to 'sclang.yaml'.
+5. edit start.scd.

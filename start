@@ -1,1 +1,3 @@
-sclang -a -l sclang.yaml start.scd
+#!/bin/bash
+cd "`dirname "$0"`"
+./sclang -l sclang.yaml start.scd

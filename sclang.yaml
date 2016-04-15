@@ -1,3 +1,5 @@
 includePaths:
-    - ./SCClassLibrary
+    - SCClassLibrary
 postInlineWarnings: false
+excludeDefaultPaths: true
+project: true

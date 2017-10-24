@@ -5,10 +5,13 @@ s.options.loadDefs = false;
 "SC_JACK_DEFAULT_INPUTS".setenv("firewire_pcm");
 "SC_JACK_DEFAULT_OUTPUTS".setenv("firewire_pcm");
 fork{
+	var synthdefDir;
 	"started".postln;
 	s.bootSync;
 	"booted".postln;
-    s.loadDirectory("%/synthdefs".format(LanguageConfig.currentDirectory));
+	synthdefDir = "%/synthdefs".format(LanguageConfig.currentDirectory);
+    s.loadDirectory(synthdefDir);
+	SynthDef.synthDefDir_(synthdefDir);
 	s.sync;
 	x = { Out.ar(0, WhiteNoise.ar(0.1) ) }.play;
 	Synth(\testTone)

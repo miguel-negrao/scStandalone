@@ -1,0 +1,7 @@
+#!/bin/bash
+SCRIPT_DIR=`dirname "$0"`
+#let scide pick the right sclang binary
+export PATH="$SCRIPT_DIR":$PATH
+#don't let scide write in the user config directory
+export XDG_CONFIG_HOME="$SCRIPT_DIR/config"
+"$SCRIPT_DIR/scide" -style=gtk

@@ -3,7 +3,7 @@
 ## Instructions
 
 ##Linux:
-0. Compile SuperCollider from master.
+0. Compile SuperCollider from [this branch](https://github.com/miguel-negrao/supercollider/tree/miguel/topics/projects-finished-1).
 1. clone this repository.
 1. copy sclang and scsynth/supernova to this folder.
 2. copy the plugins to the 'plugins' folder.
